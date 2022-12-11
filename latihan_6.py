@@ -31,8 +31,8 @@ else :
 	detector = cv2.SimpleBlobDetector_create(params)
 
 #define range of selected color in HSV
-lower_limit = np.array([0,50,50])
-upper_limit = np.array([20,255,255])
+lower_limit = np.array([0,10,30])
+upper_limit = np.array([30,255,255])
 
 kernel =np.ones((5, 5), np.uint8)
 while(True):
@@ -50,7 +50,7 @@ while(True):
 	res = cv2.bitwise_and(im,im, mask= mask)
 
 	#cv2.imshow('frame',im)
-	#cv.imshow('mask',mask)
+	cv2.imshow('mask',mask)
 	cv2.imshow('res',res)
 
 	#im3 = cv2.bitwise_not(im3)

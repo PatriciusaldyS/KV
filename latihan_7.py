@@ -94,7 +94,7 @@ def main() :
 		"ylabel" : "",
 		"xtick" : [],
 		"ytick" : [],
-"title" : "LBP Image",
+		"title" : "LBP Image",
 		"type" : "gray"
 	})
 	
